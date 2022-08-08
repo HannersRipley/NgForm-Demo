@@ -1,0 +1,5 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  Name: <input name="first" ngModel autocomplete="off" />
+  <button>Submit</button>
+</form>
+<p>Form value: {{ f.value | json }}</p>
